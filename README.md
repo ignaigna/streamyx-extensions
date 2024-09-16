@@ -20,7 +20,7 @@ Install dependencies:
 npm install
 ```
 
-### Development
+## Development
 
 File `service.js` contains simple implementation of [NTV](https://www.ntv.ru/) service. You can use it as a template for your own service.
 

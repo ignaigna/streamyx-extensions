@@ -6,6 +6,8 @@ Supported formats for services distribution are `zip` and `tgz`.
 
 ## Install
 
+[Node.js](https://nodejs.org/en/) is required.
+
 Clone this repository:
 
 ```shell

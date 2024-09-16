@@ -15,6 +15,6 @@
     "vitest": "^2.1.1"
   },
   "dependencies": {
-    "@streamyx/core": "^2.1.0"
+    "@streamyx/core": "^2.1.1"
   }
 }

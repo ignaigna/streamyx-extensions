@@ -1,8 +1,13 @@
 {
   "name": "streamyx-service-example",
   "version": "1.0.0",
-  "main": "service.js",
+  "main": "./dist/service.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsup service.js --minify terser --target node20 --clean",
+    "prepack": "npm run build",
     "postpack": "tar2zip *.tgz",
     "test": "vitest"
   },
@@ -10,8 +15,14 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "devDependencies": {
     "tar-to-zip": "^3.0.0",
+    "terser": "^5.33.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
     "vitest": "^2.1.1"
   },
   "dependencies": {

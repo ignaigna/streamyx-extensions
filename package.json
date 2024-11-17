@@ -1,9 +1,10 @@
 {
   "name": "@streamyx/service-example",
   "version": "0.0.1",
-  "main": "./dist/service.js",
+  "main": "index.js",
   "files": [
-    "dist"
+    "index.js",
+    "dist/service.jsc"
   ],
   "scripts": {
     "bundle": "tsup ./lib/service.js --format cjs --target node22 --clean",

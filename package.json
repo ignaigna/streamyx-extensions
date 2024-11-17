@@ -1,14 +1,17 @@
 {
-  "name": "streamyx-service-example",
-  "version": "1.0.0",
+  "name": "@streamyx/service-example",
+  "version": "0.0.1",
   "main": "./dist/service.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup service.js --minify terser --target node20 --clean",
+    "bundle": "tsup ./lib/service.js --format cjs --target node22 --clean",
+    "compile": "bytenode --compile ./dist/service.js",
+    "build": "npm run bundle && npm run compile",
     "prepack": "npm run build",
     "postpack": "tar2zip *.tgz",
+    "prepublishOnly": "npm run build",
     "test": "vitest"
   },
   "keywords": [],
@@ -16,16 +19,19 @@
   "license": "ISC",
   "description": "",
   "engines": {
-    "node": ">=20.0.0"
+    "node": "22"
+  },
+  "dependencies": {
+    "@streamyx/core": "^2.1.1",
+    "bytenode": "^1.5.6"
   },
   "devDependencies": {
     "tar-to-zip": "^3.0.0",
-    "terser": "^5.33.0",
     "tsup": "^8.3.0",
-    "typescript": "^5.6.2",
-    "vitest": "^2.1.1"
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
   },
-  "dependencies": {
-    "@streamyx/core": "^2.1.1"
-  }
+  "bundleDependencies": [
+    "bytenode"
+  ]
 }

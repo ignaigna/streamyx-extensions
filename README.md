@@ -1,4 +1,4 @@
-# Example of Streamyx external service
+# Streamyx Service Example
 
 Service can be added to Streamyx via `add` command from direct URL or from local path.
 
@@ -24,11 +24,11 @@ npm install
 
 ## Development
 
-File `service.js` contains simple implementation of [NTV](https://www.ntv.ru/) service. You can use it as a template for your own service.
+File `lib/service.js` contains simple implementation of [NTV](https://www.ntv.ru/) service. You can use it as a template for your own service.
 
 ## Testing
 
-File `service.test.js` contains couple of tests for service. It can be useful for debugging while you developing your service.
+File `lib/service.test.js` contains couple of tests for service. It can be useful for debugging while you developing your service.
 
 ```shell
 npm test
@@ -46,7 +46,21 @@ npm pack
 
 Results will be `tgz` and `zip` files. You can share any of this files to distribute service.
 
-### Remote
+### Remote via NPM
+
+Publish your code to NPM:
+
+```shell
+npm publish
+```
+
+Then you can simply add service by package name via `add` Streamyx command:
+
+```shell
+streamyx add @streamyx/service-example
+```
+
+### Remote via GitHub
 
 Publish your code to GitHub.
 

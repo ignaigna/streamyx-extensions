@@ -2,7 +2,7 @@
 
 import { expect, test } from 'vitest';
 import { registerService } from '@streamyx/core';
-import service from './service';
+import service from '../lib/service';
 
 test('register service', () => {
   const instance = registerService(service);

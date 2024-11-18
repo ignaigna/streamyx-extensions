@@ -24,11 +24,11 @@ npm install
 
 ## Development
 
-File `lib/service.js` contains simple implementation of [NTV](https://www.ntv.ru/) service. You can use it as a template for your own service.
+File `service.js` contains simple implementation of [NTV](https://www.ntv.ru/) service. You can use it as a template for your own service.
 
 ## Testing
 
-File `lib/service.test.js` contains couple of tests for service. It can be useful for debugging while you developing your service.
+File `service.test.js` contains couple of tests for service. It can be useful for debugging while you developing your service.
 
 ```shell
 npm test

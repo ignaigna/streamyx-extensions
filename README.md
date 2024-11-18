@@ -1,6 +1,6 @@
 # Streamyx Service Example
 
-Service can be added to Streamyx via `add` command from direct URL or from local path.
+Service can be added to Streamyx via `install` command from direct URL or from local path.
 
 Supported formats for services distribution are `zip` and `tgz`.
 

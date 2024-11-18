@@ -6,11 +6,7 @@
     "service.js"
   ],
   "scripts": {
-    "bundle": "tsup ./lib/service.js --format cjs --target node22 --clean",
-    "build": "npm run bundle",
-    "prepack": "npm run build",
     "postpack": "tar2zip *.tgz",
-    "prepublishOnly": "npm run build",
     "test": "vitest"
   },
   "keywords": [],
@@ -23,8 +19,6 @@
   "devDependencies": {
     "@streamyx/core": "^2.1.1",
     "tar-to-zip": "^3.0.0",
-    "tsup": "^8.3.0",
-    "typescript": "^5.6.3",
     "vitest": "^2.1.5"
   }
 }

@@ -1,15 +1,13 @@
 {
   "name": "@streamyx/service-example",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "service.js",
   "files": [
-    "index.js",
-    "dist/service.jsc"
+    "service.js"
   ],
   "scripts": {
     "bundle": "tsup ./lib/service.js --format cjs --target node22 --clean",
-    "compile": "bytenode --compile ./dist/service.js",
-    "build": "npm run bundle && npm run compile",
+    "build": "npm run bundle",
     "prepack": "npm run build",
     "postpack": "tar2zip *.tgz",
     "prepublishOnly": "npm run build",
@@ -22,17 +20,11 @@
   "engines": {
     "node": "22"
   },
-  "dependencies": {
-    "@streamyx/core": "^2.1.1",
-    "bytenode": "^1.5.6"
-  },
   "devDependencies": {
+    "@streamyx/core": "^2.1.1",
     "tar-to-zip": "^3.0.0",
     "tsup": "^8.3.0",
     "typescript": "^5.6.3",
     "vitest": "^2.1.5"
-  },
-  "bundleDependencies": [
-    "bytenode"
-  ]
+  }
 }

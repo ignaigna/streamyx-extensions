@@ -1,6 +1,6 @@
 'use strict';
 
-// Only CommonJS syntax modules is compatible with Streamyx
+// Only CommonJS syntax modules is compatible with Streamyx at this time
 
 /**
  * @type {import("@streamyx/core").Service}

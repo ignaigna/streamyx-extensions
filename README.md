@@ -54,10 +54,10 @@ Publish your code to NPM:
 npm publish
 ```
 
-Then you can simply add service by package name via `add` Streamyx command:
+Then you can simply add service by package name via `install` Streamyx command:
 
 ```shell
-streamyx add @streamyx/service-example
+streamyx install @streamyx/service-example
 ```
 
 ### Remote via GitHub

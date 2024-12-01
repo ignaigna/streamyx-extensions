@@ -2,8 +2,9 @@
 
 // Only CommonJS syntax modules is compatible with Streamyx at this time
 
-/** @type {import("@streamyx/core").PluginInstance} */
-const service = {
+/** @type {import("@streamyx/api").Extension} */
+
+const extension = {
   name: 'bitmovin',
   fetchContentMetadata: async (url) => {
     const response = await http.fetch(url);
@@ -26,4 +27,4 @@ const service = {
   },
 };
 
-module.exports = service;
+module.exports = extension;

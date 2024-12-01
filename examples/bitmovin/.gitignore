@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/logs
+/drm
+/bin
+/services
+/tmp
+.DS_Store

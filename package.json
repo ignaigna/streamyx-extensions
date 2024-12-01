@@ -1,9 +1,9 @@
 {
-  "name": "@streamyx/service-example",
+  "name": "@streamyx/service-bitmovin",
   "version": "0.0.1",
-  "main": "service.js",
+  "main": "bitmovin.js",
   "files": [
-    "service.js"
+    "bitmovin.js"
   ],
   "scripts": {
     "postpack": "tar2zip *.tgz",

@@ -1,5 +1,9 @@
 # Streamyx Service Example
 
+This is a sample plugin for [Streamyx](https://streamyx.ru).
+
+In this example we have a simple implementation of Streamyx service/plugin that adds support for downloading video from [Bitmovin](https://bitmovin.com/demos/drm/).
+
 Service can be added to Streamyx via `install` command from direct URL or from local path.
 
 Supported formats for services distribution are `zip` and `tgz`.
@@ -24,11 +28,11 @@ npm install
 
 ## Development
 
-File `service.js` contains simple implementation of [NTV](https://www.ntv.ru/) service. You can use it as a template for your own service.
+Main file is `bitmovin.js`, it contains all necessary code to support downloading video from [Bitmovin](https://bitmovin.com/demos/drm/). You can use it as a template for your own service.
 
 ## Testing
 
-File `service.test.js` contains couple of tests for service. It can be useful for debugging while you developing your service.
+File `bitmovin.test.js` contains a couple of tests. It can be useful for debugging while you developing your own script.
 
 ```shell
 npm test

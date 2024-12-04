@@ -186,7 +186,7 @@ const crunchyroll: Extension = {
     const episodeId = url.split('watch/')[1]?.split('/')[0];
     const seriesId = url.split('series/')[1]?.split('/')[0];
     const results: ContentMetadata[] = [];
-    const langs = structuredClone(args.languages || []);
+    const langs = args.languages || [];
     if (!langs.length) langs.push('ja-JP');
     for (const lang of langs) {
       args.languages = [lang];
